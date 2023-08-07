@@ -2,7 +2,8 @@
 
 test_description='Basic simple framework test'
 
-. "$(dirname "${0}")/sharness/sharness.sh"
+SHARNESS_TEST_SRCDIR="$(dirname "${0}")/sharness"
+. "${SHARNESS_TEST_SRCDIR}/sharness.sh"
 
 command -v grep > /dev/null && test_set_prereq GREP
 
